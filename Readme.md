@@ -1,6 +1,6 @@
 # Личный проект «Pink» 
 
-* Студент: [{{userName}}]({{userProfile}}).
+* Студент: [Дмитрий М.](https://github.com/D-Meriuts/Pink).
 * Наставник: `Неизвестно`.
 
 ---
