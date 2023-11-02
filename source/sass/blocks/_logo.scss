@@ -1,0 +1,55 @@
+.logo:hover .logo__desktop {
+  fill: var(--logo-accent-color-hover);
+}
+
+.logo:active .logo__desktop {
+  fill: var(--logo-base-color);
+  opacity: 0.3;
+}
+
+.logo__image {
+  display: block;
+  width: 75px;
+  height: 25px;
+
+  @media (min-width: $tablet-width) {
+    width: 145px;
+    height: 40px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 147px;
+    height: 40px;
+  }
+}
+
+.logo__mobile,
+.logo__tablet,
+.logo__desktop {
+  fill: var(--logo-base-color);
+}
+
+.logo__tablet,
+.logo__desktop {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .logo__mobile {
+    display: none;
+  }
+
+  .logo__tablet {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__tablet {
+    display: none;
+  }
+
+  .logo__desktop {
+    display: block;
+  }
+}

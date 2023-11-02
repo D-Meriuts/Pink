@@ -1,0 +1,24 @@
+.footer {
+  padding: 40px 0;
+  font-size: 32px;
+  color: var(--text-color);
+
+  @media (min-width: $desktop-width) {
+    padding: 75px 0;
+  }
+}
+
+.footer__container {
+  padding: 0 var(--container-padding);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+}

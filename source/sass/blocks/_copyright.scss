@@ -1,0 +1,26 @@
+.copyright__link {
+  display: flex;
+  align-items: center;
+  color: var(--text-color);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+
+  &:hover .copyright__logo {
+    fill: var(--logo-footer-color-hover);
+  }
+
+  &:active .copyright__logo {
+    fill: var(--logo-footer-color-hover);
+    opacity: 0.3;
+  }
+
+  @media (min-widt: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.copyright__logo {
+  fill: var(--logo-footer-color);
+  margin-left: 15px;
+}

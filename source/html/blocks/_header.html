@@ -1,0 +1,28 @@
+<header class="header header--nojs">
+  <div class="header__wrapper">
+    <div class="header__container">
+      <div class="header__row">
+
+        <div class="logo">
+          <a href="@@mainpagelink">
+            @@include("_logo__image.html")
+          </a>
+        </div>
+        <button class="burger-toggle">
+          <div class="burger-toggle__icon"></div>
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+      @@include("_navigation.html", {
+      "navigationHome" : "@@navigationHome",
+      "navigationCatalog": "@@navigationCatalog",
+      "navigationForm": "@@navigationForm"
+      })
+    </div>
+  </div>
+
+
+</header>
+
+
+

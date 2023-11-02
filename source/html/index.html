@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pink</title>
+  <meta name="description" content="Главная страница">
+  <link rel="stylesheet" href="./css/style.min.css">
+
+  <link rel="icon" href="favicon.ico"> <!-- 32×32 -->
+  <link rel="icon" href="img/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicons/apple180.png"> <!-- 180×180 -->
+</head>
+
+<body>
+  <!-- header -->
+  @@include("blocks/_header.html", {
+  "mainpagelink": "#!",
+  "navigationHome" : "navigation__link--active"
+  })
+
+  <!-- main -->
+  <div class="content">
+    <div class="content__container">
+      <div class="content-promo__subtitle">
+        <P class="content-promo__text">Взгляните на жизнь иначе!</P>
+      </div>
+      <div class="content-promo__image">
+        <picture>
+          <!-- webp -->
+          <source type="image/webp" media="(min-width: 1200px)" srcset="
+          ./img/images/phone-desktop.webp 1x,
+          ./img/images/phone-desktop@2x.webp 2x">
+
+          <source type="image/webp" media="(min-width: 660px)" srcset="
+          ./img/images/phone-tablet.webp 1x,
+          ./img/images/phone-tablet@2x.webp 2x">
+
+          <source type="image/webp" srcset="
+          ./img/images/phone.webp 1x,
+          ./img/images/phone@2x.webp 2x">
+
+          <!-- png -->
+          <source media="(min-width: 1200px)" srcset="
+          ./img/images/phone-desktop.png 1x,
+          ./img/images/phone-desktop@2x.png 2x">
+
+          <source media="(min-width: 660px)" srcset="
+          ./img/images/phone-tablet.png 1x,
+          ./img/images/phone-tablet@2x.png 2x">
+
+          <img class="content-promo__pict" src="./img/images/phone.png" srcset="./img/images/phone@2x.png 2x"
+            alt="мобильник" width="320" height="286">
+        </picture>
+      </div>
+      <div class="content-promo__store store">
+        <div class="store__container">
+          <a class="store__button" type="button">Скачать приложение</a>
+          <div class="store__vendors">
+            <svg width="47" height="56">
+              <use xlink:href="img/sprite.svg#apple-logo"></use>
+            </svg>
+            <svg width="43" height="47">
+              <use xlink:href="img/sprite.svg#android-logo"></use>
+            </svg>
+            <svg width="44" height="41">
+              <use xlink:href="img/sprite.svg#microsoft-logo"></use>
+            </svg>
+          </div>
+          <p class="store__description">Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X, Windows 8</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <main style="margin-top: 271px;">
+    Главная страница
+
+  </main>
+
+
+
+
+  <!-- footer  -->
+  @@include("blocks/_footer.html")
+
+  <script src="./js/index.min.js"></script>
+</body>
+
+</html>

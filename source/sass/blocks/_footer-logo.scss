@@ -1,0 +1,12 @@
+.footer-logo__image {
+  fill: var(--text-color);
+
+  &:hover {
+    fill: var(--logo-accent-color-hover);
+  }
+
+  &:active {
+    fill: var(--text-color);
+    opacity: 0.3;
+  }
+}

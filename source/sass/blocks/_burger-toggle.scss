@@ -1,0 +1,86 @@
+/* Nav Icon */
+.burger-toggle {
+  // burger-toggle
+  --time: 0.2s;
+  --width: 50px;
+  --height: 25px;
+  --line-height: 4px;
+  --spacing: 6px;
+  --color: #ffffff;
+  --radius: 4px;
+
+  /* Fixed height and width */
+  /* height: var(--height); */
+  /* width: var(--width); */
+
+  /* Dynamic height and width */
+  height: calc(var(--line-height) * 3 + var(--spacing) * 2);
+  width: var(--width);
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+
+  /* Layout */
+  z-index: 999;
+
+  // display: none;
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.burger-toggle__icon {
+  position: relative;
+  width: var(--width);
+  height: var(--line-height);
+  background-color: var(--color);
+  border-radius: var(--radius);
+}
+
+
+.burger-toggle__icon::before,
+.burger-toggle__icon::after {
+  content: "";
+  display: block;
+
+  position: absolute;
+  left: 0;
+
+  width: var(--width);
+  height: var(--line-height);
+
+  border-radius: var(--radius);
+  background-color: var(--color);
+  transition: transform var(--time) ease-in,
+    top var(--time) linear var(--time);
+}
+
+.burger-toggle__icon::before {
+  /* top: calc(var(--line-height) * -2); */
+  top: calc(-1 * (var(--line-height) + var(--spacing)));
+}
+
+.burger-toggle__icon::after {
+  /* top: calc(var(--line-height) * 2); */
+  top: calc(var(--line-height) + var(--spacing));
+}
+
+.burger-toggle__icon--active {
+  background-color: transparent;
+}
+
+
+.burger-toggle__icon--active::before,
+.burger-toggle__icon--active::after {
+  top: 0;
+  transition: top var(--time) linear,
+    transform var(--time) ease-in var(--time);
+}
+
+.burger-toggle__icon--active::before {
+  transform: rotate(45deg);
+}
+
+.burger-toggle__icon--active::after {
+  transform: rotate(-45deg);
+}

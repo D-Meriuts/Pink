@@ -1,0 +1,68 @@
+.store {
+  color: #ffffff;
+  background-color: #1D2631;
+  height: 271px;
+  padding: 28px var(--container-padding) 38px;
+
+  @media (min-width: $tablet-width) {
+    background-color: transparent;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+.store__container {
+  margin: 0 auto;
+  max-width: 320px;
+  height: 205px;
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    height: 235px;
+    width: 300px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 275px;
+  }
+}
+
+.store__button {
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 18px;
+  padding: 20px 20px;
+  border-radius: 40px;
+  border: 3px solid #ffffff;
+  width: 100%;
+  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 21px;
+  }
+}
+
+.store__vendors {
+  display: flex;
+  justify-content: center;
+  column-gap: 35px;
+}
+
+.store__description {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    font-size: 18px;
+  }
+}

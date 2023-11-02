@@ -1,0 +1,13 @@
+// Начните писать стили здесь
+
+// global
+@import "./global/reset";
+@import "./global/vars";
+@import "./global/base";
+@import "./global/utils";
+@import "./global/containers";
+@import "./global/sticky-footer";
+@import "./global/fonts";
+
+// blocks
+@import "./blocks/*.scss";
