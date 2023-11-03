@@ -21,61 +21,104 @@
   })
 
   <!-- main -->
-  <div class="content">
-    <div class="content__container">
-      <div class="content-promo__subtitle">
-        <P class="content-promo__text">Взгляните на жизнь иначе!</P>
-      </div>
-      <div class="content-promo__image">
-        <picture>
-          <!-- webp -->
-          <source type="image/webp" media="(min-width: 1200px)" srcset="
+  <main>
+    <h1 class="visually-hidden">PINK</h1>
+    <div class="content">
+      <div class="content__container">
+        <div class="content-promo__subtitle">
+          <P class="content-promo__text">Взгляните на жизнь иначе!</P>
+        </div>
+        <div class="content-promo__image">
+          <picture>
+            <!-- webp -->
+            <source type="image/webp" media="(min-width: 1200px)" srcset="
           ./img/images/phone-desktop.webp 1x,
           ./img/images/phone-desktop@2x.webp 2x">
 
-          <source type="image/webp" media="(min-width: 660px)" srcset="
+            <source type="image/webp" media="(min-width: 660px)" srcset="
           ./img/images/phone-tablet.webp 1x,
           ./img/images/phone-tablet@2x.webp 2x">
 
-          <source type="image/webp" srcset="
+            <source type="image/webp" srcset="
           ./img/images/phone.webp 1x,
           ./img/images/phone@2x.webp 2x">
 
-          <!-- png -->
-          <source media="(min-width: 1200px)" srcset="
+            <!-- png -->
+            <source media="(min-width: 1200px)" srcset="
           ./img/images/phone-desktop.png 1x,
           ./img/images/phone-desktop@2x.png 2x">
 
-          <source media="(min-width: 660px)" srcset="
+            <source media="(min-width: 660px)" srcset="
           ./img/images/phone-tablet.png 1x,
           ./img/images/phone-tablet@2x.png 2x">
 
-          <img class="content-promo__pict" src="./img/images/phone.png" srcset="./img/images/phone@2x.png 2x"
-            alt="мобильник" width="320" height="286">
-        </picture>
-      </div>
-      <div class="content-promo__store store">
-        <div class="store__container">
-          <a class="store__button" type="button">Скачать приложение</a>
-          <div class="store__vendors">
-            <svg width="47" height="56">
-              <use xlink:href="img/sprite.svg#apple-logo"></use>
-            </svg>
-            <svg width="43" height="47">
-              <use xlink:href="img/sprite.svg#android-logo"></use>
-            </svg>
-            <svg width="44" height="41">
-              <use xlink:href="img/sprite.svg#microsoft-logo"></use>
-            </svg>
+            <img class="content-promo__pict" src="./img/images/phone.png" srcset="./img/images/phone@2x.png 2x"
+              alt="мобильник" width="320" height="286">
+          </picture>
+        </div>
+        <div class="content-promo__store store">
+          <div class="store__container">
+            <a class="store__button" type="button">Скачать приложение</a>
+            <div class="store__vendors">
+              <svg width="47" height="56">
+                <use xlink:href="img/sprite.svg#apple-logo"></use>
+              </svg>
+              <svg width="43" height="47">
+                <use xlink:href="img/sprite.svg#android-logo"></use>
+              </svg>
+              <svg width="44" height="41">
+                <use xlink:href="img/sprite.svg#microsoft-logo"></use>
+              </svg>
+            </div>
+            <p class="store__description">Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X, Windows 8</p>
           </div>
-          <p class="store__description">Доступно для iPhone, iPad, Android, <br> Windows Phone, OS X, Windows 8</p>
         </div>
       </div>
     </div>
-  </div>
 
-  <main style="margin-top: 271px;">
-    Главная страница
+    <div class="promo-tittle">
+      <p class="promo-tittle__text">Устали от серости мегаполиса?</p>
+      <p class="promo-tittle__text">Нам есть, что вам <br> предложить!</p>
+    </div>
+
+    <section class="features">
+      <h2 class="visually-hidden">Фишки</h2>
+      <ul class="features__list">
+        <li class="features__item">
+          <h3 class="features__title">Поднимает настроение</h3>
+          <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__title">Меняет мир вокруг</h3>
+          <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="features__item">
+          <h3 class="features__title">Заводит новых друзей</h3>
+          <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+
+        <!-- <li class="features__item">
+          <div class="features__wrapper">
+            <h3 class="features__title">Поднимает настроение</h3>
+            <p class="features__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+
+          </div>
+        </li> -->
+
+      </ul>
+    </section>
+
+    <section class="effects none">
+      <h2 class="visually-hidden">Интересный факт</h2>
+      <p class="effects__subtittle">Эффект на 24 часа!</p>
+      <p class="effects__text">
+        Британские ученые провели исследования
+        и доказали, что положительный эффект
+        от использования приложения длится целые сутки!</p>
+      <a href="#!" class="effects__link">Узнать больше об исследовании</a>
+    </section>
+
+
 
   </main>
 

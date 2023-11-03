@@ -1,15 +1,22 @@
 :root {
   --container-width: 1200px;
   --container-padding: 20px;
-  --container-desktop-padding: 130px;
+  --container-padding-desktop: 130px;
+
+  // --container-desktop-padding: 130px;
 
   --font-main: "Opensans", "Arial", sans-serif;
   --font-accent: "Opensans", sans-serif;
+
+    --font-main: "Opensans";
 
 
   // background color
   --page-bg: #ffffff;
   --block-bg: #283645;
+  --content-bg: #f2f2f2;
+
+
   --border-top-color: rgba(255, 255, 255, 0.15);
   --border-bottom-color: #000000;
 
@@ -19,10 +26,10 @@
 
   //logo-color
   --logo-base-color: #ffffff;
-  --logo-accent-color-hover:#d22856;
+  --logo-accent-color-hover: #d22856;
 
-  --logo-footer-color:#d22856;
-  --logo-footer-color-hover:#283645;
+  --logo-footer-color: #d22856;
+  --logo-footer-color-hover: #283645;
 
   --text-color: #283645;
   --text-color-accent: #000000;
@@ -47,6 +54,8 @@
 
 // viewports
 $desktop-width: 1200px;
+// $desktop-width: 960px;
+
 $tablet-width: 660px;
 $mobile-width-only: 659px;
 

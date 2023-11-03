@@ -21,4 +21,11 @@
     max-width: 1200px;
     margin: 0 auto;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 var(--container-padding-desktop);
+  }
 }
+
+
+
