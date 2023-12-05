@@ -1,0 +1,112 @@
+.effects {
+  display: none;
+
+  @media (min-width: $tablet-width) {
+    display: block;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    // width: 940px;
+    background-color: var(--content-bg);
+  }
+}
+.effects__container {
+  @media (min-width: $tablet-width) {
+    margin: 0 auto;
+    padding: 0 var(--container-padding);
+    padding-top: 54px;
+    padding-bottom: 67px;
+    width: 620px;
+  }
+  @media (min-width: $desktop-width) {
+    width: 940px;
+  }
+}
+
+.effects__wrapper {
+  display: grid;
+  grid-template-columns: 238px 310px;
+  gap: 72px;
+
+  @media (min-width: $desktop-width) {
+    grid-template-columns: 298px 534px;
+
+  }
+}
+
+.effects__subtittle {
+  color: var(--text-color-accent);
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 36px;
+  /* 120% */
+  margin-top: 48px;
+}
+
+.effects__text {
+  color: var(--text-color);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 24px 0;
+
+  /* 171.429% */
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.effects .effects__link {
+  color: #D22856;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  /* 171.429% */
+  text-decoration-line: underline;
+
+  @media (min-width: $desktop-width) {
+    font-size: 18px;
+  }
+}
+
+.effects__timer {
+  height: 276px;
+  width: 238px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-image:
+    url('./../img/svg_icons/timer-diagram.svg'),
+    url("./../img/svg_icons/timer.svg");
+    background-size: 202px 202px, 238px 276px;
+  background-position: center 75%, center center;
+  /* x y */
+  background-repeat: no-repeat;
+
+  @media (min-width: $desktop-width) {
+    width: 298px;
+    height: 345px;
+    background-size: 252px 252px, 298px 345px;
+  }
+}
+
+.effects__timer-count {
+  color: var(--text-color-colored);
+  text-align: center;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 163px;
+  /* 169.792% */
+  margin-top: 25px;
+
+  @media (min-width: $desktop-width) {
+    font-size: 120px;
+
+  }
+}

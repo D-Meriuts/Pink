@@ -4,7 +4,7 @@
   background-position: 0 top;
   background-repeat: no-repeat;
   background-size: 100% 35px;
-  padding: 0 20px;
+  padding: 0 var(--container-padding);
 
   @media (min-width: $tablet-width) {
     background-size: 100% 55px;
@@ -12,7 +12,6 @@
 
   @media (min-width: $desktop-width) {
     background-size: 100% 100px;
-
   }
 }
 
@@ -48,9 +47,7 @@
     flex-direction: row;
     justify-content: space-around;
     max-width: 940px;
-    // padding-top: 366px;
     padding: 0;
-    padding-bottom: 60px;
   }
 }
 
@@ -58,18 +55,38 @@
   max-width: 310px;
 
   @media (min-width: $desktop-width) {
-    // width: 252px;
-
-    padding-top: 366px;
-
-    background-image:
-      // url("./../img/background/iphone-screen-3.png"),
-
-      url("./../img/background/bg-phone.png");
-    background-position: center top;
-    /* x y */
-    background-size: 186px 382px;
+    display: grid;
+    grid-template-columns: 252px;
+    grid-template-rows: 1fr 1fr;
+    min-height: 550px;
+    padding-top: 300px;
+    background-position: center 45px, center top;/* x y */
+    background-size: 165px 294px, 186px 382px;
     background-repeat: no-repeat;
+  }
+}
+
+.features__item:first-child {
+  @media (min-width: $desktop-width) {
+    background-image:
+      url("./../img/background/iphone-screen-1.png"),
+      url("./../img/background/bg-phone.png");
+  }
+}
+
+.features__item:nth-child(2) {
+  @media (min-width: $desktop-width) {
+    background-image:
+      url("./../img/background/iphone-screen-2.png"),
+      url("./../img/background/bg-phone.png");
+  }
+}
+
+.features__item:last-child {
+  @media (min-width: $desktop-width) {
+    background-image:
+      url("./../img/background/iphone-screen-3.png"),
+      url("./../img/background/bg-phone.png");
   }
 }
 
@@ -77,13 +94,7 @@
   @media (min-width: $desktop-width) {
     margin-top: -80px;
     padding-top: 60px;
-    background-color: #F2F2F2;
-
-
-
-
-
-
+    background-color: var(--content-bg);
   }
 }
 
@@ -97,6 +108,11 @@
 
   @media (min-width: $desktop-width) {
     font-size: 30px;
+
+    background-color: var(--content-bg);
+    padding-top: 50px;
+    padding-bottom: 35px;
+    margin-bottom: 0;
   }
 }
 
